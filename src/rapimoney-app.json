@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "rapimoney-app",
+  "private_key_id": "d2e0e9f0fdb359854a88fe7ad6ab3854d6e7f6a3",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDLu1Z2wCMksXpq\nQYKPqyBQaPUSuheoiMgMgk6Nzw0IfmXZRxHhMKIxmakc0nDIdpoGx/HMdmz7RaWk\n97tUtn3sxJy9lAOqvS1bY5MLLKeqMmzv7bpNtKriuVGl+epN3U8fMILjnaD6hD1C\nZztqkQLkT6B46x9e0x8SOh5cY6Qbw5Ozd0PkthKRaHx7uASMmdcv4InhlnaUbOnP\nt520mh9ttZAK1ikNraVMvuvVl4Qc60tmEcgouwbBAoN45LvLb3NUrTzhglzIwsox\n0OCBC3Nh8fmCYifRgsF/VR9g+vkoH214OZ/kYSn0mZKbW/Xd7oSkt8rxaF3EsUGM\ntg69mkffAgMBAAECggEAHVKGxMutozPaGx33pSbrnTcmAr5+9jZNmKNOnBFvXkgW\n75lPhPpDdeEYWnodWnTbgVtYvWVUFSw2hZJUR4KGiEPaDV0W1AWrWApyWPrh3Niq\nHjQ4isOUjtI+YqWgJ/nQz/vi8tC2oSfUS1DhV9qsMGEXhx/MIZFAWRa9VO3QamBP\nOREbaU7W2yHOiAaMA791/ctB0t65mhp45SG67PgdV/nYsfY/1FFMvImEhY0pBd0W\n1tdo6ckzfFhylMgJejY90yrgJUZ5jB/6sk2BdCCiNEALfj/WHSfg9D+MFRxlCdi1\n1pPmCFTDasmvXEt+ctcnNG+wixWYgtRgL8m+4RvkUQKBgQD8gXvVYEAbFqWgYR8U\nuLVBoKCQTYuzPan24/lMDSqZ/OUX/YF4ccowP8JXCSqSwU13xIgDeXi8aR1E8seT\nGZTBuwZWU7uorAgxsOHjXHcEFcnGtR9moqLgcUaIvPizjYiA3n+Ud/5ps7mwt4o4\nY/1T4rQ5Di8bjC+gFZ1wMRmMMQKBgQDOjRG91kSmBNwVCPe8ic0Bpu/CQ1pWwW8g\nXUR8Key15aXTuSuo2FOEhmsplEtvqvG9G0TPyw+cvV/hFmbPemagrkXoFUiyRw2m\nS/o+vLY+EXyZDuB4VsjOlSI+F2jfEz+HGhR1j//N/Ccbmqc7Yl49E7xop3iBn02P\n0dPlUiThDwKBgA7aUv1vJvYw89cmP1zJrKfKmgdC+He3pdrG+DAYCix6qsMpf0cl\ncl46MeVKvb1aL4NfBR0nNQnoKPeYTFMDyzNGHA5R6JT4YZcCr5bfJoUP/wl4N/ui\nj3AiWaLLctmk9qWV8O07zbRMBR02/qNohks755v/kJfPPDHvc45Y5QbRAoGBAMkN\nJ6fRWSEAufj/saUjvRlOlTJSvSyVPMYUAwWZCYBE+RUNuSGw8BqffNAMOSGJE6Uv\nVdutnJTFAP7n/0sVqa/d8s3lac2eu/qTGhLXPc1M2Ctj/7sjPnNXVu15e+snoT6w\ndBm7ARRPzQFhmEaFiZWKEGsOGI6Tsbu8UrV1L9ChAoGBAOgP42vhXV559WCe35Cr\n6e+8+jvHbyXSUgrEGYOA1sq+8RZ3kNg7Y3pbjXoWdpVzAOZi2X1bzks5lI1p2zoM\nN9Q8MQy7FWHaePsTu6q55GlaMsZfq5XU4QFdxlF9owxkVhZvDnPG+3J0yhrWs+Os\ncLqGwWMkMXtcbvkWdRQDf1db\n-----END PRIVATE KEY-----\n",
+  "client_email": "rapimoney-app@rapimoney-app.iam.gserviceaccount.com",
+  "client_id": "111673562587502212358",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/rapimoney-app%40rapimoney-app.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
