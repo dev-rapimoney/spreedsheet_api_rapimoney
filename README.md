@@ -5,19 +5,23 @@
 
 ## Endpoints
 
-### `POST /send-email`
+### `POST /write-sheet`
 
 #### Description
-This endpoint is used to send an email with the specified parameters.
+This endpoint is used to write in Google SpreedSheet.
 
 #### Request
 - **Method:** POST
 - **Headers:**
   - `Content-Type`: application/json
 - **Body:**
-  - `to_email` (string, required): Email address of the recipient.
-  - `subject` (string, required): Subject of the email.
-  - `message` (string): Additional message from the sender (optional).
+  - `nombres`
+  - `dni`
+  - `celular`
+  - `tarjeta`
+  - `monto`
+  - `region`
+  - `occupation`
 
 #### Response
 - **Success Response:**
@@ -25,8 +29,8 @@ This endpoint is used to send an email with the specified parameters.
   - **Body:**
     ```json
     {
-      "success": "Email sent successfully",
-      "info": "<details about the sent email>"
+      "success": "Data written successfully",
+      "info": "<details about the writting datal>"
     }
     ```
 - **Error Response:**
@@ -34,7 +38,7 @@ This endpoint is used to send an email with the specified parameters.
   - **Body:**
     ```json
     {
-      "error": "Failed to send email",
+      "error": "Internal Server Error",
       "details": "<error message>"
     }
     ```
@@ -43,14 +47,13 @@ This endpoint is used to send an email with the specified parameters.
 
 Create a `.env` file in the root of your project and define the following variables:
 
-- `MAIL_USER`: contacto@rapimoney.pe
-- `MAIL_PASSWORD`: @contacto2024
-- `MAIL_SERVER`: mail.rapimoney.pe
-- `MAIL_IMAP_PORT`: 993
-- `MAIL_POP3_PORT`: 995
-- `MAIL_SMTP_PORT`: 465
-
-- `API_SERVER_PORT:` 3000
+- `API_PORT`:
+- `SPREADSHEET_ID`:
+- `KEY_FILE_PATH`:
+- `SCOPES`:
+- `SHEET_NAME`:
+- `VALUE_INPUT_OPTION`:
+- `URL_ORIGIN`:
 
 # Running the Server
 To start the server, run the following command in your terminal:
@@ -60,14 +63,16 @@ node server.js
 ```
 # Trigger the API
 ```bash
-curl -X POST \
-  http://localhost:3000/send-email \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "to_email": "email@server.com",
-    "subject": "Primer Envio",
-    "message": "Email de prueba enviado desde curl (y)"
-}'
+curl -X POST -H "Content-Type: application/json" -d '{
+  "nombres": "John Doe",
+  "dni": "123456789",
+  "celular": "123", 
+  "tarjeta": "1234 5678 9012 3456",
+  "monto": 100.00,
+  "region": "Some Region",
+  "occupation": "Some Occupation"
+}' http://localhost:3326/write-sheet
+
 
 ```
 
