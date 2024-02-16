@@ -59,10 +59,10 @@ app.post('/write-sheet', async (req, res) => {
         });
 
         console.log('Data written successfully');
-        res.status(200).send('Data written successfully');
+        res.status(200).json({ message: 'Data written successfully' });
     } catch (error) {
         console.error('Error:', error);
-        res.status(500).send('Internal Server Error');
+        res.status(500).json({ error: 'Internal server error' });
     }
 });
 
