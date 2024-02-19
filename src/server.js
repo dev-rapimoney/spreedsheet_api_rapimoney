@@ -31,9 +31,12 @@ app.post('/write-sheet', async (req, res) => {
     const sheetName = process.env.SHEET_NAME;
     const valueInputOption = process.env.VALUE_INPUT_OPTION;  // How input data should be interpreted.
 
-    const { nombres, dni, celular, tarjeta, monto, region, occupation } = req.body;
+    // Generate timestamp
+    const timestamp = new Date().toISOString();
 
-    const values = [[nombres, dni, celular, tarjeta, monto, region, occupation]];  // The data to be written.
+    const { nombres, dni, celular, tarjeta, monto, region, ocupacion } = req.body;
+
+    const values = [[nombres, dni, celular, tarjeta, monto, region, ocupacion, timestamp]];  // The data to be written.
 
     try {
         // Read existing rows
