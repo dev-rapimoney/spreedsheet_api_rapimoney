@@ -21,7 +21,7 @@ This endpoint is used to write in Google SpreedSheet.
   - `tarjeta`
   - `monto`
   - `region`
-  - `ocupacion`
+  - `occupation`
 
 #### Response
 - **Success Response:**
@@ -70,7 +70,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
   "tarjeta": "1234 5678 9012 3456",
   "monto": 100.00,
   "region": "Some Region",
-  "ocupacion": "Some ocupacion"
+  "occupation": "Some occupation"
 }' http://localhost:3326/write-sheet
 
 

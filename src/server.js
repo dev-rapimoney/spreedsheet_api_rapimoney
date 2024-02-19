@@ -34,9 +34,9 @@ app.post('/write-sheet', async (req, res) => {
     // Generate timestamp
     const timestamp = new Date().toISOString();
 
-    const { nombres, dni, celular, tarjeta, monto, region, ocupacion } = req.body;
+    const { nombres, dni, celular, tarjeta, monto, region, occupation } = req.body;
 
-    const values = [[nombres, dni, celular, tarjeta, monto, region, ocupacion, timestamp]];  // The data to be written.
+    const values = [[nombres, dni, celular, tarjeta, monto, region, occupation, timestamp]];  // The data to be written.
 
     try {
         // Read existing rows
