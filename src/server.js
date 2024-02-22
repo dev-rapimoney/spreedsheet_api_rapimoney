@@ -32,7 +32,8 @@ app.post('/write-sheet', async (req, res) => {
     const valueInputOption = process.env.VALUE_INPUT_OPTION;  // How input data should be interpreted.
 
     // Generate timestamp
-    const timestamp = new Date().toISOString();
+    const currentDate = new Date().toISOString();
+    const timestamp = new Date(currentDate.getTime() - (5 * 60 * 60 * 1000));
 
     const { nombres, dni, celular, tarjeta, monto, region, ocupacion } = req.body;
 
