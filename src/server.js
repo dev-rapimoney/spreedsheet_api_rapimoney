@@ -31,9 +31,21 @@ app.post('/write-sheet', async (req, res) => {
     const sheetName = process.env.SHEET_NAME;
     const valueInputOption = process.env.VALUE_INPUT_OPTION;  // How input data should be interpreted.
 
-    // Generate timestamp
-    const currentDate = new Date().toISOString();
-    const timestamp = new Date(currentDate.getTime() - (5 * 60 * 60 * 1000));
+    // Create a new Date object
+    const currentDate = new Date();
+
+    // Adjust the time to GMT-5 timezone
+    const adjustedTime = new Date(currentDate.getTime() - (5 * 60 * 60 * 1000));
+
+    // Extract day, month, year, hours, and minutes
+    const day = adjustedTime.getUTCDate();
+    const month = adjustedTime.getUTCMonth() + 1; // Months are zero-indexed
+    const year = adjustedTime.getUTCFullYear();
+    const hours = adjustedTime.getUTCHours();
+    const minutes = adjustedTime.getUTCMinutes();
+
+    // Format the date and time
+    const timestamp = `${day < 10 ? '0' + day : day}-${month < 10 ? '0' + month : month}-${year} ${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes} -5GMT`;
 
     const { nombres, dni, celular, tarjeta, monto, region, ocupacion } = req.body;
 
