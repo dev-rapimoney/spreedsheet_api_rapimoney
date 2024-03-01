@@ -47,9 +47,9 @@ app.post('/write-sheet', async (req, res) => {
     // Format the date and time
     const timestamp = `${day < 10 ? '0' + day : day}-${month < 10 ? '0' + month : month}-${year} ${hours < 10 ? '0' + hours : hours}:${minutes < 10 ? '0' + minutes : minutes} -5GMT`;
 
-    const { nombres, dni, celular, tarjeta, tipo_tarjeta, monto, region, ocupacion } = req.body;
+    const { nombres, dni, celular, tarjeta, tipo_tarjeta, monto, region, ocupacion , codigopromocional} = req.body;
 
-    const values = [[nombres, dni, celular, tarjeta, tipo_tarjeta, monto, region, ocupacion, timestamp]];  // The data to be written.
+    const values = [[nombres, dni, celular, tarjeta, tipo_tarjeta, monto, region, ocupacion, codigopromocional, timestamp]];  // The data to be written.
 
     try {
         // Read existing rows
